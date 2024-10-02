@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Gliker';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('../fonts/Gliker-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Gliker';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''), url('../fonts/Gliker-Bold.woff2') format('woff2');
+}
+
+$font-1:'Gliker';
+$white:#fff;
+$black:#000;
+$primary: #3680D5;
+$secondary: #FFDB2B;
+$text:#000;
+$heading: $black;
+$border:#4B4B4B;
+$bg:#3782D5;
+:root {
+    scroll-behavior: auto !important;
+}

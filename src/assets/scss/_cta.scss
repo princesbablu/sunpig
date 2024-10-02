@@ -1,0 +1,154 @@
+.cta {
+    padding-bottom: 210px;
+    @include xl {
+        padding-bottom: 180px;
+    }
+    @include lg {
+        padding-bottom: 140px;
+    }
+    @include mmd {
+        padding-bottom: 100px;
+    }
+    &-wrap {
+        border-radius: 40px;
+        border: 8px solid #FFF;
+        background: #FFDB2B;
+        position: relative;
+        z-index: 1;
+        @include sm {
+            border-width: 4px;
+        }
+        & .logo {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            @include xl {
+                left: 40%;
+            }
+            @include lg {
+                left: 40%;
+            }
+            @include mmd {
+                position: unset;
+                transform: unset;
+            }
+            & img {
+                @include xxl {
+                    max-width: 380px;
+                }
+                @include xl {
+                    max-width: 280px;
+                }
+                @include lg {
+                    max-width: 200px;
+                }
+                @include mmd {
+                    max-width: 220px;
+                }
+            }
+        }
+        & .img {
+            & img {
+                border-radius: 30px 0 0 30px;
+                @include xxl {
+                    max-width: 620px;
+                }
+                @include xl {
+                    max-width: 500px;
+                }
+                @include lg {
+                    max-width: 400px;
+                }
+                @include mmd {
+                    max-width: 300px;
+                    border-radius: 0px;
+                }
+            }
+        }
+        & .content {
+            max-width: 745px;
+            margin-top: 91px;
+            margin-right: 55px;
+            color: #000;
+            @include xxl {
+                margin-top: 50px;
+            }
+            @include xl {
+                margin-top: 50px;
+            }
+            @include lg {
+                margin-top: 50px;
+            }
+            @include mmd {
+                margin-top: 0;
+                margin-right: 0;
+                padding: 0 20px;
+            }
+            & h3 {
+                color: #000;
+                font-size: 60px;
+                font-weight: 400;
+                line-height: 103%;
+                text-transform: capitalize;
+                margin-bottom: 25px;
+                @include xxl {
+                    font-size: 50px;
+                }
+                @include xl {
+                    font-size: 50px;
+                }
+                @include lg {
+                    font-size: 42px;
+                }
+                @include mmd {
+                    font-size: 40px;
+                    margin-bottom: 16px;
+                }
+                @include sm {
+                    font-size: 32px;
+                    margin-bottom: 10px;
+                }
+            }
+            & p {
+                font-size: 28.856px;
+                font-weight: 400;
+                line-height: 150%;
+                text-transform: capitalize;
+                margin-bottom: 43px;
+                @include xl {
+                    font-size: 26px;
+                }
+                @include lg {
+                    font-size: 24px;
+                }
+                @include mmd {
+                    font-size: 22px;
+                    margin-bottom: 20px;
+                }
+                @include sm {
+                    font-size: 18px;
+                }
+            }
+        }
+        & .style {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+        & .btn {
+            padding: 23px 85px;
+            @include lg {
+                padding: 18px 60px;
+                font-size: 20px;
+            }
+            @include mmd {
+                padding: 18px 60px;
+                font-size: 20px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

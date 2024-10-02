@@ -1,0 +1,224 @@
+.banner {
+    padding-top: 133px;
+    padding-bottom: 51px;
+    background-image: url(../img/banner-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    &-content {
+        margin-bottom: 26px;
+        @include lg {
+            margin-bottom: 22px;
+        }
+        @include mmd {
+            margin-bottom: 16px;
+        }
+        & h1 {
+            color: #FFF;
+            text-shadow: 8px 10px 4px #1A2B33;
+            -webkit-text-stroke-width: 3px;
+            -webkit-text-stroke-color: #000;
+            font-size: 150px;
+            font-weight: 700;
+            line-height: 120%;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            @include xl {
+                font-size: 130px;
+            }
+            @include lg {
+                font-size: 100px;
+            }
+            @include mmd {
+                font-size: 80px;
+            }
+            @include sm {
+                font-size: 60px;
+                margin-bottom: 24px;
+            }
+            @include ssm {
+                font-size: 52px;
+            }
+        }
+        & p {
+            font-size: 24px;
+            line-height: 100%;
+            letter-spacing: 0.64px;
+            @include md {
+                font-size: 22px;
+            }
+            @include sm {
+                font-size: 20px;
+                overflow: hidden;
+            }
+            @include ssm {
+                font-size: 18px;
+            }
+        }
+    }
+    & .img {
+        margin-bottom: 44px;
+        @include lg {
+            margin-bottom: 40px;
+        }
+        @include mmd {
+            margin-bottom: 30px;
+        }
+        & img {
+            max-width: 560px;
+            @include lg {
+                max-width: 440px;
+            }
+            @include md {
+                max-width: 420px;
+            }
+            @include sm {
+                max-width: 250px;
+            }
+        }
+    }
+    & .btn {
+        margin-bottom: 120px;
+        padding: 24px 80px;
+        @include lg {
+            margin-bottom: 80px;
+        }
+        @include mmd {
+            padding: 20px 60px;
+            margin-bottom: 70px;
+        }
+        @include sm {
+            padding: 14px 50px;
+            margin-bottom: 50px;
+        }
+        @include ssm {
+            margin-bottom: 40px;
+        }
+    }
+    & .token-wrap {
+        & .token {
+            padding: 18px 35px;
+            border: 2px solid #FFF;
+            border-radius: 88px;
+            background: #357FD4;
+            box-shadow: 0px 4px 76px 0px #2C63A2;
+            height: 100px;
+            width: 760px;
+            @include lg {
+                height: 76px;
+            }
+            @include mmd {
+                height: 76px;
+                width: 100%;
+                overflow: hidden;
+            }
+            @include sm {
+                height: 60px;
+                padding: 20px;
+            }
+            & p {
+                font-size: 25px;
+                line-height: 120%;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+                color: $white;
+                @include xl {
+                    font-size: 23px;
+                }
+                @include lg {
+                    font-size: 22px;
+                }
+                @include mmd {
+                    font-size: 20px;
+                    overflow: hidden;
+                }
+                @include sm {
+                    font-size: 16px;
+                    display: flex;
+                    padding-right: 40px;
+                }
+            }
+            & button {
+                --size: 64px;
+                width: var(--size);
+                height: var(--size);
+                border-radius: 76.8px;
+                border: 1.28px solid #010101;
+                background-color: #FFDB2B;
+                font-size: 30px;
+                position: absolute;
+                top: 50%;
+                right: 18px;
+                @include transition;
+                transform: translate(0, -50%);
+                @include lg {
+                    --size: 54px;
+                    font-size: 28px;
+                    right: 8px;
+                }
+                @include mmd {
+                    --size: 54px;
+                    font-size: 24px;
+                    right: 8px;
+                }
+                @include sm {
+                    --size: 46px;
+                    font-size: 20px;
+                    right: 6px;
+                }
+                &:hover {
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+    &-social {
+        position: absolute;
+        top: 43%;
+        right: 0;
+        transform: translate(0, -50%);
+        @include sm {
+            position: unset;
+            transform: unset;
+        }
+        @include ssm {
+            display: block !important;
+        }
+        & .social {
+            &-list {
+                border-radius: 145.332px;
+                border: 1px solid $white;
+                background: $primary;
+                box-shadow: 4px 4px 20px 0px #4B75A6;
+                width: max-content;
+                margin-bottom: 24px;
+                @include ssm {
+                    margin: 0 auto;
+                    margin-bottom: 16px;
+                }
+            }
+            &-link {
+                background-color: $white;
+            }
+        }
+    }
+    & .style {
+        position: absolute;
+        z-index: -1;
+        &-1 {
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 111px;
+            @include sm {
+                height: 50px;
+            }
+        }
+    }
+}
+
+.js-tilt-glare-inner {
+    background: none !important;
+}
